@@ -1,0 +1,60 @@
+{
+  "dispositivos": [
+    {
+      "id": 1,
+      "tipo": "Router",
+      "marca": "Cisco",
+      "modelo": "RV340",
+      "precio": 320
+    },
+    {
+      "id": 2,
+      "tipo": "Switch",
+      "marca": "TP-Link",
+      "modelo": "TL-SG108",
+      "precio": 45
+    },
+    {
+      "id": 3,
+      "tipo": "Servidor",
+      "marca": "Dell",
+      "modelo": "PowerEdge T40",
+      "precio": 650
+    },
+    {
+      "id": 4,
+      "tipo": "Router",
+      "marca": "MikroTik",
+      "modelo": "hEX S",
+      "precio": 70
+    },
+    {
+      "id": 5,
+      "tipo": "Switch",
+      "marca": "Netgear",
+      "modelo": "GS308",
+      "precio": 60
+    },
+    {
+      "id": 6,
+      "tipo": "Servidor",
+      "marca": "HP",
+      "modelo": "ProLiant ML30",
+      "precio": 800
+    },
+    {
+      "id": 7,
+      "tipo": "Router",
+      "marca": "Ubiquiti",
+      "modelo": "EdgeRouter X",
+      "precio": 65
+    },
+    {
+      "id": 8,
+      "tipo": "Switch",
+      "marca": "Cisco",
+      "modelo": "SG250-26",
+      "precio": 280
+    }
+  ]
+}
