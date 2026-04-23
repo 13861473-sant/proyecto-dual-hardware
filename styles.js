@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("inventario.json")
     .then(response => {
@@ -7,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then(data => {
+
+     alert("Trabajo hecho por Santiago");
       const contenedor = document.getElementById("tabla-contenedor");
 
       // Crear tabla
