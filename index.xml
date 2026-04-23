@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="inventario.xsl"?>
+<laboratorio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="inventario.xsd">
+    <dispositivo>
+        <id>OSC1234</id>
+        <nombre>Osciloscopio Digital</nombre>
+        <categoria>Medición</categoria>
+        <marca>Tektronix</marca>
+        <estado>Disponible</estado>
+        <fechaIngreso>2023-05-15</fechaIngreso>
+        <especificaciones>
+            <especificacion clave="Ancho de Banda">100MHz</especificacion>
+            <especificacion clave="Canales">4</especificacion>
+        </especificaciones>
+    </dispositivo>
+
+    <dispositivo>
+        <id>SLD5588</id>
+        <nombre>Estación de Soldadura</nombre>
+        <categoria>Herramientas</categoria>
+        <marca>HAKKO</marca>
+        <estado>Mantenimiento</estado>
+        <fechaIngreso>2024-01-10</fechaIngreso>
+        <especificaciones>
+            <especificacion clave="Potencia">75W</especificacion>
+            <especificacion clave="Rango Temp">50°C - 480°C</especificacion>
+        </especificaciones>
+    </dispositivo>
+
+    <dispositivo>
+        <id>RPI9001</id>
+        <nombre>Raspberry Pi 5</nombre>
+        <categoria>Computación</categoria>
+        <marca>Raspberry Pi Foundation</marca>
+        <estado>En Uso</estado>
+        <fechaIngreso>2024-03-20</fechaIngreso>
+        <especificaciones>
+            <especificacion clave="RAM">8GB</especificacion>
+            <especificacion clave="Procesador">Broadcom BCM2712</especificacion>
+        </especificaciones>
+    </dispositivo>
+</laboratorio>
