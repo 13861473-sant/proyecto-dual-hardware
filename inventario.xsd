@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="TipoID">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TipoEstado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Disponible"/>
+            <xs:enumeration value="En Uso"/>
+            <xs:enumeration value="Mantenimiento"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="laboratorio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dispositivo" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="TipoID"/>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="categoria" type="xs:string"/>
+                            <xs:element name="marca" type="xs:string"/>
+                            <xs:element name="estado" type="TipoEstado"/>
+                            <xs:element name="fechaIngreso" type="xs:date"/>
+                            <xs:element name="especificaciones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="especificacion" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="clave" type="xs:string" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
